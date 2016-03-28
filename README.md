@@ -1,4 +1,4 @@
-# lets_encrype.pl
+# lets_encrypt.pl
 
 ## Basic Usage
 

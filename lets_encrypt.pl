@@ -1,11 +1,16 @@
 #!/usr/bin/env perl
+#
+# Usage: ./lets_encrypt.pl <domain>[,alias] <htdocs folder> [test]
+#
+# Url: https://github.com/sni/lets_encrypt.pl
+#
 
 use warnings;
 use strict;
 use Crypt::LE;
 
 my $domain   = $ARGV[0];
-my $htdocs   = $ARGV[1] or die("usage: $0 <domain> <htdocs folder> [<test>]");
+my $htdocs   = $ARGV[1] or die("usage: $0 <domain>[,alias] <htdocs folder> [test]");
 my $testmode = $ARGV[2];
 
 (-w $htdocs && -d $htdocs) || die("cannot write to $htdocs: $!");

@@ -1,6 +1,6 @@
-= lets_encrype.pl
+# lets_encrype.pl
 
-== Basic Usage
+## Basic Usage
 
 Clone this script and run like this:
 
@@ -10,7 +10,7 @@ this script will automate the client challenge of lets encrypt and put
 the files in your htdocs folder for verification.
 
 
-== Apache Configuration
+## Apache Configuration
 
 The recommended apache configuration including HSTS header is:
 

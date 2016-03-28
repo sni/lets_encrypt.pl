@@ -10,6 +10,13 @@ this script will automate the client challenge of lets encrypt and put
 the files in your htdocs folder for verification.
 
 
+## Requirements
+
+You will need the [Crypt::LE](http://search.cpan.org/perldoc?Crypt%3A%3ALE)
+CPAN module. Best installed by `cpanm` and `local::lib` untill there are system
+packages available.
+
+
 ## Apache Configuration
 
 The recommended apache configuration including HSTS header is:

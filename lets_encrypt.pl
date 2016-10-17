@@ -8,6 +8,7 @@
 use warnings;
 use strict;
 use Crypt::LE;
+use Crypt::OpenSSL::PKCS10;
 
 my $domain   = $ARGV[0];
 my $htdocs   = $ARGV[1] or die("usage: $0 <domain>[,alias] <htdocs folder> [test]");
@@ -32,6 +33,7 @@ if(-f 'account.key') {
 
 # generate request
 $le->generate_csr($domain);
+$le->csr() or die("failed to generate csr ".$le->error_details());
 _write($basefile.'.csr', $le->csr());
 
 $le->register();

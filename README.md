@@ -1,3 +1,5 @@
+***DEPRECATED:*** this script does not work with the required registration ids anymore. Please use certbot instead.
+
 # lets_encrypt.pl
 
 ## Basic Usage
